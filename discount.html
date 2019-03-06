@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Discount Calculator</title>
+	<script type="text/javascript">
+		var calulate = function(){
+			var item = parseFloat(document.getElementById("itemPrice").value);
+			var disper = parseFloat(document.getElementById("discountPercentage").value);
+		if (item > 1000 || item <0   ){
+			alert("Price must be betweent 0 and 1000");}
+
+			if ((disper>70 || disper<0)){
+				alert("Discount amonut should be between 0 and 70");}
+			else{	
+				if (isNaN(item)||isNaN(disper)){
+				alert("The entry shoud be a number");}
+				else{
+			var disdoll = (item*disper)/100;
+			var net = item - disdoll;
+			document.getElementById("discountDollar").value = disdoll;
+			document.getElementById("netprice").value = net;}
+		}
+		}
+	
+
+
+	</script>
+
+
+</head>
+
+	<body>
+		<center>
+		<form>
+			<h2>Discount Calcutor</h2>
+			<p1>Price of the item: &nbsp&nbsp&nbsp&nbsp&nbsp  <input type="text" id="itemPrice"><br><br></p1>
+			<p1>Discount:  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <input type="text" id="discountPercentage"><br><br></p1>
+			<p1>Amount off:  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" id="discountDollar" disabled><br><br></p1>
+			<p1>Net price:  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" id="netprice" disabled><br><br></p1>
+
+			<br>
+			<input type="button" id="calculate" value="calculate" onclick="calulate()"><br><br>
+			<input type="reset" id ="reset">
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+<script> 
+$(document).ready(function(){
+    $("#animate").click(function(){
+        $("div").animate({left: '250px',background: '#FF0000'});
+		
+    });
+	
+	$("#animateBack").click(function(){
+        $("div").animate({left: '0px',background: '#98bf21'});
+		
+    });
+	
+	$("#drink").click(function(){
+        $("p1").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+	
+	
+	$("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+
+</script> 
+</head>
+<body>
+
+<button id="slide">hide</button>
+<button id="animate">Start Animation</button>
+<button id="animateBack">Rewind</button>
+
+
+<button id="show">Show</button>
+
+<p>how you doin?</p>
+
+</body>
+</html>

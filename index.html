@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+<script> 
+$(document).ready(function(){
+    $("#slide").click(function(){
+        $("div").slide({left: '250px',background: '#FF0000'});
+		
+    });
+	
+	$("#slideBack").click(function(){
+        $("div").slide({left: '0px',background: '#98bf21'});
+		
+    });
+	
+	$("#drink").click(function(){
+        $("p1").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+	
+	
+	$("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+
+</script> 
+</head>
+<body>
+
+<button id="slide">Start Animation</button>
+<button id="slideBack">Rewind</button>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="drink">Drink</button>
+
+<p>Some fun with jQuery</p>
+<p id="p1">I am DRUNK</p>
+<p>
+hi
+</p>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+<br/ ><br/ ><br/ ><br/ ><br/ ><br/ ><br/ >
+<p>Date: <input type="text" id="datepicker"></p>
+</body>
+</html>

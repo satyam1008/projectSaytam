@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<title>JQuery</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+		<script>
+
+	$(document).ready(function() {
+		$("#p4").hide();
+		$("#p3").hide();
+		$("#p7").hide();
+		$("#next").hide();
+		$("#info").hide();
+		$("#cou").hide();
+		$("#pr").hide();
+		$("#yes").hide();
+		$("#no").hide();
+	
+	$("#click").click(function(){
+		$("#p1").show(1000);});
+	
+	$("#click").click(function(){
+		$("#p1").css({"color":"lightblue"}).slideUp(1000).slideDown(1000);});
+
+	$("#click").click(function(){
+		$("#info").show(1000);});
+
+	$("#info").click(function(){
+		$("#p2").show(1000);});
+
+	$("#info").click(function(){
+		$("#p2").css({"color":"red"}).slideUp(1000).slideDown(1000);});
+
+	$("#info").click(function(){
+		$("#info").hide(1000);});
+	
+	$("#info").click(function(){
+		$("#cou").show(1000);});
+	
+	$("#cou").click(function(){
+		$("#p5").show(1000);});
+
+	$("#cou").click(function(){
+		$("#p5").css({"color":"yellow"}).slideUp(1000).slideDown(1000);});
+
+	$("#cou").click(function(){
+		$("#cou").hide(1000);});
+	
+	$("#cou").click(function(){
+		$("#pr").show(1000);});
+	
+	$("#pr").click(function(){
+		$("#p6").show(1000);});
+
+	$("#pr").click(function(){
+		$("#p6").css({"color":"orange"}).slideUp(1000).slideDown(1000);});
+
+	$("#pr").click(function(){
+		$("#pr").hide(1000);});
+	
+	$("#pr").click(function(){
+		$("#next").show(1000);});
+	
+	$("#click").click(function(){
+		$("#click").hide(1000);});
+	
+	$("#next").click(function(){
+		$("#p1").hide(1000);});
+	
+	$("#next").click(function(){
+		$("#p2").hide(1000);});
+	
+	$("#next").click(function(){
+		$("#p5").hide(1000);});
+	
+	$("#next").click(function(){
+		$("#p6").hide(1000);});
+	
+	$("#next").click(function(){
+		$("#p4").show(1000);});
+
+	$("#next").click(function(){
+		$("#next").hide(1000);});
+		
+	$("#next").click(function(){
+		$("#yes").show(1000);});
+
+	$("#next").click(function(){
+		$("#no").show(1000);});
+
+	$("#yes").click(function(){
+		$("#p3").show(1000);});
+
+	$("#no").click(function(){
+		$("#p7").show(1000);});
+
+	$("#yes").click(function(){
+		$("#p7").hide(1000);});
+
+	$("#no").click(function(){
+		$("#p3").hide(1000);});
+});
+
+</script>
+</head>
+
+<body>
+
+	<input type="button" value="Click to start" id="click">
+
+		<p id="p1"> <font size="5">Hey, welcome to my JQuery page. My name is Satyam and let me tell you a bit about me</font></p>
+
+	<input type="button" value="info" id="info"></input>
+		<p id="p2"><font size="5">I study in Lambton College and my Student ID is C0732025</font></p>
+
+	<input type="button" value="course" id="cou"></input>
+		<p id="p5"> <font size="5">The course I study is computer programming</font></p>
+
+	<input type="button" value="Profession" id="pr"></input>
+		<p id="p6"> <font size="5">I am 19 years old and Assnt Manager at Domino's Pizza</font></p>
+
+	<input type="button" value="Next" id="next">	</input>
+		<p id="p4"> <font size="5">Would you like to know more?</font></p>
+	
+	<input type="button" value="Yes" id="yes"></input>
+		<p id="p3"> <font size="5">Message me to know more :)</font></p>
+	
+	<input type="button" value="No" id="no"></input>
+		<p id="p7"> <font size="5">Thank you for watching</font></p>
+
+
+</body>
+</html>
